@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Learning Platform</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./static/css/main.css">
+</head>
+<body>
+    <!-- class="fixed w-full z-50 bg-white drop-shadow-md" -->
+    <header class="py-5 bg-white drop-shadow-md lg:bg-transparent lg:drop-shadow-none relative z-50">
+        <div class="container mx-auto px-4 relative">
+            <nav class="flex items-center justify-between lg:justify-normal">
+                <h1 class="text-green-500 text-3xl font-bold">eLearning</h1>
+                <div class="nav-links mr-auto duration-500 absolute bg-gray-100 lg:bg-transparent lg:static lg:min-h-fit min-h-[30vh] left-0 top-[-500px] lg:w-auto w-full flex items-center px-5 py-5 lg:py-0 rounded">
+                    <ul class="flex lg:flex-row flex-col gap-4 me-28">
+                        <li>
+                            <a href="#" class="p-2 text-green-500 border-b-2 border-green-500 font-medium">الرئيسية</a>
+                        </li>
+                        <li>
+                            <a href="#" class="p-2 text-gray-500 font-normal">مميزات</a>
+                        </li>
+                        <li>
+                            <a href="#" class="p-2 text-gray-500 font-normal">فوائد</a>
+                        </li>
+                        <li>
+                            <a href="#" class="p-2 text-gray-500 font-normal">الدورات</a>
+                        </li>
+                        <li>
+                            <a href="#" class="p-2 text-gray-500 font-normal">المدونات</a>
+                        </li>
+                        <li>
+                            <a href="#" class="p-2 text-gray-500 font-normal">تسجيل الدخول</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex items-center">
+                    <button class="border w-10 h-10 lg:w-14 lg:h-14 text-sm bg-gray-100 rounded-full me-4">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    <button class="bg-green-500 py-2 px-4 lg:py-4 lg:px-3 text-white font-medium rounded-full transition-all hover:bg-white hover:outline-green-500 hover:outline hover:outline-1 hover:text-green-500">
+                        <span class="me-2 hidden sm:inline">ابدأ الآن</span>
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </button>
+                    <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer lg:hidden ms-4"></ion-icon>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="landing relative">
+            <section class="container mx-auto px-4">
+                <div class="relative z-20">
+                    <div class="flex justify-between items-center">
+                        <div class="relative z-20 w-full lg:max-w-sm xl:max-w-xl">
+                            <h1 class="text-4xl xl:text-6xl">
+                                أنت تجلب <span class="text-green-500">الخبرة</span>، ونحن سوف نجعلها لا تنسى.
+                            </h1>
+                            <p class="my-8">
+                                باستخدام الأنشطة ومقاطع الفيديو والرسوم المتحركة المخصصة للغاية، يمكنك تنشيط طلابك وتحفيزهم على تحقيق أهدافهم التعليمية أثناء تقدمهم خلال الرحلة.
+                            </p>
+                            <div class="flex gap-4">
+                                <button class="bg-green-500 p-4 rounded-full text-white transition-all hover:bg-white hover:outline-green-500 hover:outline hover:outline-1 hover:text-green-500">
+                                    <span class="me-2 font-medium">تسجيل</span>
+                                    <i class="fa-solid fa-arrow-left"></i>
+                                </button>
+                                <button class="outline outline-1 outline-green-500 p-4 rounded-full text-green-500 transition-all hover:bg-green-500 hover:text-white">
+                                    <span class="me-2 font-medium">تسجيل الدخول</span>
+                                    <i class="fa-solid fa-arrow-left"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="relative hidden lg:block">
+                            <span class="w-[1.875rem] h-[1.875rem] absolute bg-white rounded-full top-[100px] left-[127px] z-10"></span>
+                            <span class="w-[1.875rem] h-[1.875rem] absolute bg-white rounded-full top-[100px] right-[14px] z-10"></span>
+                            <span class="w-[1.875rem] h-[1.875rem] absolute bg-white rounded-full top-[188px] left-[94px] z-10"></span>
+                            <span class="w-[0.875rem] h-[0.875rem] absolute bg-white rounded-full top-[200px] left-[195px] z-10"></span>
+                            <span class="w-[0.875rem] h-[0.875rem] absolute bg-white rounded-full top-[250px] right-[-7px] z-10"></span>
+                            <span class="w-[0.875rem] h-[0.875rem] absolute bg-white rounded-full top-[665px] left-[135px] z-10"></span>
+                            <span class="w-[1.875rem] h-[1.875rem] absolute bg-green-500 rounded-full bottom-[10px] right-[-50px] z-10"></span>
+                            <span class="w-[1.125rem] h-[1.125rem] absolute bg-green-500 rounded-full bottom-[220px] left-[10px] z-10"></span>
+                            <div class="hero-bg-rounded bg-green-500 absolute w-[80%] h-[94.7%] top-9 z-auto"></div>
+                            <img class="hero-img-rounded relative w-[35.75rem] h-[42.25rem]" src="./static/images/hero.png" alt="Hero image">
+                        </div>
+                    </div>
+                    <div class="absolute lg:right-0 -bottom-32 lg:bottom-12 border border-gray-100 bg-white z-20 p-2 lg:px-5 lg:py-5 shadow-lg rounded-full flex w-11/12 lg:w-[47.9375rem] max-w-full justify-between">
+                        <div class="w-[40%] border-l-2 border-gray-100 px-2 flex items-center">
+                            <select class="w-full text-gray-500 outline-none p-2" name="" id="">
+                                <option value="">حدد الدورة التدريبية</option>
+                                <option value="">A</option>
+                                <option value="">B</option>
+                                <option value="">C</option>
+                            </select>
+                        </div>
+                        <div class="w-[40%] border-l-2 border-gray-100 px-2 flex items-center">
+                            <select class="w-full text-gray-500 outline-none p-2" name="" id="">
+                                <option value="">حدد المعلم</option>
+                                <option value="">A</option>
+                                <option value="">B</option>
+                                <option value="">C</option>
+                            </select>
+                        </div>
+                        <button class="ms-2 bg-green-500 w-12 h-12 lg:w-auto lg:h-auto lg:p-4 rounded-full text-white transition-all hover:bg-white hover:outline-green-500 hover:outline hover:outline-1 hover:text-green-500">
+                            <span class="hidden lg:inline">بحث</span>
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+                    <!-- <span class="w-[0.875rem] h-[0.875rem] absolute bg-green-500 rounded-full hidden lg:inline lg:top-[190px] lg:right-[30px] z-10"></span> -->
+                    <!-- <span class="w-[0.75rem] h-[0.75rem] absolute bg-green-500 rounded-full hidden lg:inline lg:bottom-[350px] lg:right-[35px] z-10"></span> -->
+                </div>
+            </section>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#10C843" fill-opacity="1" d="M0,64L30,64C60,64,120,64,180,90.7C240,117,300,171,360,192C420,213,480,203,540,202.7C600,203,660,213,720,202.7C780,192,840,160,900,149.3C960,139,1020,149,1080,165.3C1140,181,1200,203,1260,186.7C1320,171,1380,117,1410,90.7L1440,64L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path>
+            </svg>
+            <div class="area">
+                <ul class="circles">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                </ul>
+        </div >
+        </div>
+        <section class="bg-secondary-black mt-0 lg:mt-14 py-14">
+            <ul class="container mx-auto flex justify-between items-center overflow-x-auto">
+                <li class="px-8">
+                    <img class="max-w-none" src="./static/images/Group.png" alt="">
+                </li>
+                <li class="px-8">
+                    <img class="max-w-none" src="./static/images/Group 1.png" alt="">
+                </li>
+                <li class="px-8">
+                    <img class="max-w-none" src="./static/images/Group 2.png" alt="">
+                </li>
+                <li class="px-8">
+                    <img class="max-w-none" src="./static/images/Group 3.png" alt="">
+                </li>
+            </ul>
+        </section>
+        <section class="container mx-auto px-4 pt-40">
+            <div class="flex justify-center flex-col items-center lg:flex-row lg:justify-between lg:items-stretch">
+                <div class="lg:max-w-xl xl:max-w-3xl mb-8 lg:mb-0">
+                    <h3 class="text-2xl text-green-500">من نحن</h3>
+                    <p class="text-3xl xl:text-5xl my-5">
+                        يوفر التعليم الإلكتروني أفضل الفرص للطلاب في جميع أنحاء العالم.
+                    </p>
+                    <p class="mb-5">
+                        قم بتثبيت تطبيق دروبشيبينغ الأعلى تقييمًا على موقع التجارة الإلكترونية الخاص بك واحصل على إمكانية الوصول إلى الموردين الأمريكيين وبائعي AliExpress وأفضل دروبشيبينغ والمنتجات المخصصة. ابدأ في بيع المنتجات المناسبة لقاعدة العملاء التي تعرفها جيدًا. نحن نوصلك بالمخزون، حتى تتمكن من التركيز على إنشاء كتالوج المنتجات المربحة لمتجرك عبر الإنترنت.                </p>
+                    <p class="mb-5">
+                        قم بتثبيت تطبيق دروبشيبينغ الأعلى تقييمًا على موقع التجارة الإلكترونية الخاص بك واحصل على إمكانية الوصول إلى الموردين الأمريكيين وبائعي AliExpress وأفضل دروبشيبينغ والمنتجات المخصصة. ابدأ في بيع المنتجات المناسبة لقاعدة العملاء التي تعرفها جيدًا. نحن نوصلك بالمخزون، حتى تتمكن من التركيز على إنشاء كتالوج المنتجات المربحة لمتجرك عبر الإنترنت.
+                    </p>
+                    <button class="bg-green-500 p-4 rounded-full text-white transition-all hover:bg-white hover:outline-green-500 hover:outline hover:outline-1 hover:text-green-500">
+                        <span class="me-2 font-medium">انضم الينا</span>
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </button>
+                </div>
+                <div class="inner-white-shadow box-border bg-gray-50 self-start">
+                    <img class="lg:w-[23.5rem] rounded-lg mb-5 mr-auto" src="./static/images/about-1.jpeg" alt="">
+                    <img class="lg:w-[23.5rem] rounded-lg md:ml-60" src="./static/images/about-2.jpeg" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="container mx-auto px-4 pt-40">
+            <div class="flex flex-col lg:flex-row justify-between gap-10 lg:gap-28">
+                <div class="inner-white-shadow-2 bg-gray-100 rounded-lg pt-10 px-5 self-start md:self-center">
+                    <img class="rounded-lg" src="./static/images/test-1.jpeg" alt="">
+                </div>
+                <div class="lg:max-w-lg xl:max-w-2xl 2xl:max-w-3xl">
+                    <h3 class="text-2xl text-green-500">المميزات</h3>
+                    <p class="text-3xl xl:text-5xl my-5">
+                        نحن نعمل دائمًا على توفير أفضل الميزات لك في جميع الجوانب.</p>
+                    <p class="mb-5">
+                        قم بتثبيت تطبيق دروبشيبينغ الأعلى تقييمًا على موقع التجارة الإلكترونية الخاص بك واحصل على إمكانية الوصول إلى الموردين الأمريكيين وبائعي AliExpress وأفضل دروبشيبينغ والمنتجات المخصصة. ابدأ في بيع المنتجات المناسبة لقاعدة العملاء التي تعرفها جيدًا. نحن نوصلك بالمخزون، حتى تتمكن من التركيز على إنشاء كتالوج المنتجات المربحة لمتجرك عبر الإنترنت.                </p>
+                    <p class="mb-5">
+                        قم بتثبيت تطبيق دروبشيبينغ الأعلى تقييمًا على موقع التجارة الإلكترونية الخاص بك واحصل على إمكانية الوصول إلى الموردين الأمريكيين وبائعي AliExpress وأفضل دروبشيبينغ والمنتجات المخصصة. ابدأ في بيع المنتجات المناسبة لقاعدة العملاء التي تعرفها جيدًا. نحن نوصلك بالمخزون، حتى تتمكن من التركيز على إنشاء كتالوج المنتجات المربحة لمتجرك عبر الإنترنت.
+                    </p>
+                    <button class="bg-green-500 p-4 rounded-full text-white transition-all hover:bg-white hover:outline-green-500 hover:outline hover:outline-1 hover:text-green-500">
+                        <span class="me-2 font-medium">قراءة المزيد</span>
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="container mx-auto px-4 pt-40">
+            <div class="join-us relative rounded-lg h-[35rem] lg:h-[25rem]">
+                <div class="overlay rounded-lg text-center flex items-center justify-center flex-col p-10">
+                    <div class="max-w-lg">
+                        <h3 class="text-2xl text-green-500">انضم الينا</h3>
+                        <p class="text-2xl lg:text-4xl text-white my-5">
+                            انضم إلينا عن طريق إنشاء حساب أو بدء فترة تجريبية مجانية
+                        </p>
+                        <p class="text-white mb-5">
+                            قم بتثبيت تطبيق دروبشيبينغ الأعلى تقييمًا على موقع التجارة الإلكترونية الخاص بك واحصل على إمكانية الوصول إلى الموردين الأمريكيين وبائعي AliExpress وأفضل دروبشيبينغ والمنتجات المخصصة.
+                        </p>
+                        <div class="flex justify-center gap-4 flex-wrap">
+                            <button class="bg-green-500 p-4 rounded-full text-white transition-all hover:bg-transparent hover:outline-green-500 hover:outline hover:outline-1 hover:text-green-500">
+                                <span class="me-2 font-medium">ابدأ النسخة التجريبية المجانية</span>
+                                <i class="fa-solid fa-arrow-left"></i>
+                            </button>
+                            <button class="outline outline-1 outline-white p-4 rounded-full text-white transition-all hover:outline-green-500 hover:bg-green-500 hover:text-white">
+                                <span class="me-2 font-medium">اتصل بنا</span>
+                                <i class="fa-solid fa-arrow-left"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container mx-auto px-4 pt-40">
+
+        </section>
+    </main>
+    <script>
+        const navLinks = document.querySelector('.nav-links');
+        function onToggleMenu(e) {
+            e.name = e.name === 'menu' ? 'close' : 'menu';
+            navLinks.classList.toggle('top-[60px]');
+        }
+    </script>
+</body>
+</html>
