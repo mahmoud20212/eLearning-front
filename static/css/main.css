@@ -251,3 +251,107 @@ body .sub-join-us + footer .footer-wave {
     display: none;
 }
 /* End Footer */
+
+/* Start Swiper JS */
+.swiper-pagination-bullet {
+    background-color: rgb(74 222 128) !important;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: rgb(34 197 94) !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: rgb(34 197 94) !important;
+    font-size: 8px !important;
+}
+/* End Swiper JS */
+
+
+
+/* .triangles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.triangles li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 35px solid rgba(34, 197, 94, 0.5);
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+}
+
+.triangles li:nth-child(1) {
+    left: 25%;
+    border-bottom: 60px solid rgba(34, 197, 94, 0.5);
+    animation-delay: 0s;
+}
+
+.triangles li:nth-child(2) {
+    left: 10%;
+    border-bottom: 10px solid rgba(34, 197, 94, 0.5);
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.triangles li:nth-child(3) {
+    left: 70%;
+    border-bottom: 15px solid rgba(34, 197, 94, 0.5);
+    animation-delay: 4s;
+    animation-duration: 18s;
+}
+
+.triangles li:nth-child(4) {
+    left: 40%;
+    border-bottom: 25px solid rgba(34, 197, 94, 0.5);
+    animation-delay: 0s;
+}
+
+.triangles li:nth-child(5) {
+    left: 65%;
+    border-bottom: 45px solid rgba(34, 197, 94, 0.5);
+    animation-delay: 0s;
+    animation-duration: 14s;
+}
+
+.triangles li:nth-child(6) {
+    left: 75%;
+    border-bottom: 20px solid rgba(34, 197, 94, 0.5);
+    animation-delay: 3s;
+}
+
+.triangles li:nth-child(7) {
+    left: 35%;
+    border-bottom: 30px solid rgba(34, 197, 94, 0.5);
+    animation-delay: 7s;
+}
+
+.triangles li:nth-child(8) {
+    left: 50%;
+    border-bottom: 40px solid rgba(34, 197, 94, 0.5);
+    animation-delay: 15s;
+}
+
+.triangles li:nth-child(9) {
+    left: 20%;
+    border-bottom: 20px solid rgba(34, 197, 94, 0.5);
+    animation-delay: 2s;
+}
+
+.triangles li:nth-child(10) {
+    left: 85%;
+    border-bottom: 35px solid rgba(34, 197, 94, 0.5);
+    animation-delay: 0s;
+    animation-duration: 11s;
+} */
